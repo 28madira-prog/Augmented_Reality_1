@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+		<!-- include ar.js for a-frame -->
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body>
+		<a-scene embedded arjs>
+		<a-marker type="https://raw.githubusercontent.com/28madira/Augmented_Reality_1/main/pattern-26813_1_proof.patt">
+<a-text value="Welcome To The Expo!" position="-1 0.5 -3" color="white"></a-text>
+
+  <!-- Display multi-line, centered, blue text with a specific width -->
+  <a-text 
+    value="This is a longer message.\nIt has multiple lines." 
+    position="0 1 -4" 
+    color="blue" 
+    width="2" 
+    align="center">
+  </a-text>
+			<!-- define a camera which will move according to the marker position -->
+			<a-entity camera></a-entity>
+		</a-scene>
+	</body>
+</html>
